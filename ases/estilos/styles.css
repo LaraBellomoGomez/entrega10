@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+
+}
+
+
+
+.logo img {
+    width: 80px;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    padding: 16px;
+}
+
+.escritorio {
+    grid-area: esc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 30px 0 16px;
+    background-color: white;
+    position: relative;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 24px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    padding: 8px 24px;
+    border-radius: 30px;
+}
+
+.nav-links a :hover {
+    background-color: bisque;
+}
+
+.menu {
+    display: none;
+}
+
+.conteiner {
+    grid-area: cont;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.filtros ul {
+    grid-area: filtros;
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    list-style: none;
+    padding: 10px;
+
+
+}
+
+.filtros a {
+    text-decoration: none;
+}
+
+.filtros li {
+    padding: 5px 10px;
+    border: 1px solid gainsboro;
+}
+
+
+
+.productos {
+    grid-area: art;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.articulo {
+    width: 426px;
+    height: auto;
+}
+
+.productos img {
+    width: 426px;
+    height: auto;
+    object-fit: cover;
+
+}
+
+.productos h2 {
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.productos p {
+    font-size: 18px;
+    padding: 0px 10px;
+}
+
+button {
+    background-color: rgb(254, 255, 255);
+    font-size: 16px;
+    margin: 0px 10px 20px 10px;
+    padding: 0px 10px;
+    border: 1px solid gainsboro;
+
+}
+
+
+
+
+/* COMIENZAN LAS MEDIA */
+
+@media (max-width: 576px) {
+
+    .navbar {
+        padding: 16px;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        background-color: white;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 0;
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    .nav-links a {
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+
+    .menu {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+        font-size: 30px;
+        color: black;
+    }
+
+    .conteiner{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .productos img {
+        width: 200px;
+        height: auto;
+    }
+
+    .productos h2 {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    .productos p {
+        font-size: 14px;
+        padding: 0px 10px;
+    }
+
+    .filtros ul {
+        grid-area: filtros;
+        display: flex;
+        flex-direction: column;
+        width: 85px;
+        gap: 10px;
+        list-style: none;
+        padding: 10px;
+
+
+    }
+
+    .filtros a {
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+    .filtros li {
+        padding: 5px 10px;
+        border: 1px solid gainsboro;
+    }
+
+
+    .productos {
+        grid-area: art;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .articulo {
+        width: 280px;
+        height: auto;
+    }
+
+    .productos img {
+        width: 280px;
+        height: auto;
+        object-fit: cover;
+
+    }
+
+    .productos h2 {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    .productos p {
+        font-size: 12px;
+        padding: 0px 10px;
+    }
+
+    button {
+        background-color: rgb(254, 255, 255);
+        font-size: 14px;
+        margin: 0px 10px 20px 10px;
+        padding: 0px 10px;
+        border: 1px solid gainsboro;
+
+    }
+
+}
+
+/* TERMINAN LAS MEDIA */
