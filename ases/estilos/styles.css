@@ -122,9 +122,9 @@ button {
 
 
 
-/* COMIENZAN LAS MEDIA */
+/* COMIENZAN LAS MEDIA 575*/
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
 
     .navbar {
         padding: 16px;
@@ -247,3 +247,125 @@ button {
 }
 
 /* TERMINAN LAS MEDIA */
+
+/* COMIENZAN LAS MEDIA 767*/
+
+@media (min-width: 576px) {
+
+    .conteiner{
+        display: grid;
+    }
+
+    .navbar {
+        padding: 16px;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        background-color: white;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 0;
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    .nav-links a {
+        width: 100%;
+        padding: 0px 20px;
+        font-size: 16px;
+    }
+
+
+    .menu {
+      overflow: hidden;
+    }
+
+    .conteiner{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .productos img {
+        width: 200px;
+        height: auto;
+    }
+
+    .productos h2 {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    .productos p {
+        font-size: 14px;
+        padding: 0px 10px;
+    }
+
+    .filtros ul {
+        grid-area: filtros;
+        display: flex;
+        flex-direction: row;
+        width: 85px;
+        gap: 10px;
+        list-style: none;
+        padding: 10px;
+
+
+    }
+
+    .filtros a {
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+    .filtros li {
+        padding: 5px 10px;
+        border: 1px solid gainsboro;
+    }
+
+
+    .productos {
+        grid-area: art;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    .articulo {
+        width: 280px;
+        height: auto;
+    }
+
+    .productos img {
+        width: 280px;
+        height: auto;
+        object-fit: cover;
+
+    }
+
+    .productos h2 {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    .productos p {
+        font-size: 12px;
+        padding: 0px 10px;
+    }
+
+    button {
+        background-color: rgb(254, 255, 255);
+        font-size: 14px;
+        margin: 0px 10px 20px 10px;
+        padding: 0px 10px;
+        border: 1px solid gainsboro;
+
+    }
+
+}
+
+/* TERMINAN LAS MEDIA */
+
