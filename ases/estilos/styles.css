@@ -6,21 +6,23 @@
 
 }
 
-.body{
+body {
     display: grid;
-    grid-template-areas: 
-    "esc esc"
-    "filtros produ"
-    "pie pie";
+    grid-template-areas:
+        "esc"
+        "cont"
+        "pie";
 }
 
-.conteiner{
+.productos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+
 }
 
+
 .logo img {
-    width: 80px;
+    width: 90px;
     height: auto;
     text-align: center;
     align-items: center;
@@ -64,9 +66,6 @@
 
 .conteiner {
     grid-area: cont;
-    display: flex;
-    flex-direction: column;
-
 }
 
 
@@ -77,6 +76,7 @@
     gap: 10px;
     list-style: none;
     padding: 10px;
+    margin-bottom: 10px;
 }
 
 .filtros a {
@@ -89,15 +89,7 @@
 }
 
 
-.productos {
-    grid-area: produ;
-    display: flex;
-    flex-wrap: wrap;
-
-}
-
 .articulo {
-    grid-area: art;
     width: 426px;
     height: auto;
 }
@@ -128,7 +120,7 @@ button {
 
 }
 
-footer{
+footer {
     grid-area: pie;
     display: flex;
     background-color: rgb(210, 202, 202);
@@ -146,22 +138,18 @@ footer{
 
 @media (max-width: 575px) {
 
- .body{
-    display: grid;
-    grid-template-areas: 
-    "esc esc"
-    "filtros produ"
-    "pie pie";
-}
+    body {
+        display: grid;
+        grid-template-areas:
+            "esc"
+            "cont"
+            "pie";
+    }
 
-.conteiner{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-      .conteiner{
+    .productos {
         display: grid;
         grid-template-columns: 1fr;
+
     }
 
     .navbar {
@@ -200,9 +188,10 @@ footer{
         color: black;
     }
 
-    .conteiner{
+    .conteiner {
         display: flex;
         flex-direction: row;
+        gap: 90px;
     }
 
     .productos img {
@@ -241,14 +230,6 @@ footer{
     }
 
 
-    .productos {
-        grid-area: art;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
-    }
-
     .articulo {
         width: 280px;
         height: auto;
@@ -273,33 +254,45 @@ footer{
 
     button {
         background-color: rgb(254, 255, 255);
-        font-size: 14px;
+        font-size: 12px;
         margin: 0px 10px 20px 10px;
         padding: 0px 10px;
         border: 1px solid gainsboro;
 
     }
 
+    footer {
+    grid-area: pie;
+    display: flex;
+    background-color: rgb(210, 202, 202);
+    font-size: 10px;
+    height: 30px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
 }
 
 /* TERMINAN LAS MEDIA */
 
-/* COMIENZAN LAS MEDIA 577*/
+/* COMIENZAN LAS MEDIA 577 */
 
 @media (min-width: 576px) {
 
-    .body{
-    display: grid;
-    grid-template-areas: 
-    "esc esc"
-    "filtros produ"
-    "pie pie";
-}
+   body {
+        display: grid;
+        grid-template-areas:
+            "esc"
+            "cont"
+            "pie";
+    }
 
-.conteiner{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
 
 
     .navbar {
@@ -314,39 +307,30 @@ footer{
 
     .nav-links li {
         margin: 0;
-        padding: 20px 0;
+        padding: 10px 0;
         width: 100%;
     }
 
     .nav-links a {
         width: 100%;
-        padding: 0px 20px;
-        font-size: 16px;
+        padding: 0px 10px;
+        font-size: 14px;
     }
 
 
     .menu {
-      overflow: hidden;
+        overflow: hidden;
     }
 
-    .conteiner{
+    .conteiner {
         display: flex;
         flex-direction: column;
+    
     }
 
     .productos img {
         width: 200px;
         height: auto;
-    }
-
-    .productos h2 {
-        font-size: 14px;
-        padding: 5px 10px;
-    }
-
-    .productos p {
-        font-size: 14px;
-        padding: 0px 10px;
     }
 
     .filtros ul {
@@ -357,8 +341,6 @@ footer{
         gap: 10px;
         list-style: none;
         padding: 10px;
-
-
     }
 
     .filtros a {
@@ -369,15 +351,6 @@ footer{
     .filtros li {
         padding: 5px 10px;
         border: 1px solid gainsboro;
-    }
-
-
-    .productos {
-        grid-area: art;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-
     }
 
     .articulo {
@@ -398,7 +371,7 @@ footer{
     }
 
     .productos p {
-        font-size: 12px;
+        font-size: 14px;
         padding: 0px 10px;
     }
 
@@ -413,15 +386,24 @@ footer{
 
 }
 
-/* TERMINAN LAS MEDIA */
+/*TERMINAN LAS MEDIA */
 
-/* COMIENZAN LAS MEDIA 577*/
+/* COMIENZAN LAS MEDIA 577 */
 
 @media (min-width: 767px) {
 
-    .conteiner{
+     body {
+        display: grid;
+        grid-template-areas:
+            "esc"
+            "cont"
+            "pie";
+    }
+
+    .productos {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+
     }
 
     .navbar {
@@ -448,10 +430,10 @@ footer{
 
 
     .menu {
-      overflow: hidden;
+        overflow: hidden;
     }
 
-    .conteiner{
+    .conteiner {
         display: flex;
         flex-direction: column;
     }
@@ -461,15 +443,6 @@ footer{
         height: auto;
     }
 
-    .productos h2 {
-        font-size: 14px;
-        padding: 5px 10px;
-    }
-
-    .productos p {
-        font-size: 14px;
-        padding: 0px 10px;
-    }
 
     .filtros ul {
         grid-area: filtros;
@@ -479,13 +452,11 @@ footer{
         gap: 10px;
         list-style: none;
         padding: 10px;
-
-
     }
 
     .filtros a {
         text-decoration: none;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .filtros li {
@@ -493,14 +464,6 @@ footer{
         border: 1px solid gainsboro;
     }
 
-
-    .productos {
-        grid-area: art;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-
-    }
 
     .articulo {
         width: 280px;
@@ -515,18 +478,18 @@ footer{
     }
 
     .productos h2 {
-        font-size: 14px;
+        font-size: 16px;
         padding: 5px 10px;
     }
 
     .productos p {
-        font-size: 12px;
+        font-size: 16px;
         padding: 0px 10px;
     }
 
     button {
         background-color: rgb(254, 255, 255);
-        font-size: 14px;
+        font-size: 16px;
         margin: 0px 10px 20px 10px;
         padding: 0px 10px;
         border: 1px solid gainsboro;
@@ -537,3 +500,24 @@ footer{
 
 /* TERMINAN LAS MEDIA */
 
+/* COMIENZA LAS MEDIA */
+
+@media (min-width: 992px) {
+
+     body {
+        display: grid;
+        grid-template-areas:
+            "esc"
+            "cont"
+            "pie";
+    }
+
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    }
+}
+
+
+/* TERMINAN LAS MEDIA */
