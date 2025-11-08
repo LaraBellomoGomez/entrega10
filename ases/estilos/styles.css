@@ -6,7 +6,18 @@
 
 }
 
+.body{
+    display: grid;
+    grid-template-areas: 
+    "esc esc"
+    "filtros produ"
+    "pie pie";
+}
 
+.conteiner{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
 .logo img {
     width: 80px;
@@ -66,8 +77,6 @@
     gap: 10px;
     list-style: none;
     padding: 10px;
-
-
 }
 
 .filtros a {
@@ -80,15 +89,15 @@
 }
 
 
-
 .productos {
-    grid-area: art;
+    grid-area: produ;
     display: flex;
     flex-wrap: wrap;
 
 }
 
 .articulo {
+    grid-area: art;
     width: 426px;
     height: auto;
 }
@@ -119,12 +128,41 @@ button {
 
 }
 
+footer{
+    grid-area: pie;
+    display: flex;
+    background-color: rgb(210, 202, 202);
+    font-size: 14px;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
 
 
 
 /* COMIENZAN LAS MEDIA 575*/
 
 @media (max-width: 575px) {
+
+ .body{
+    display: grid;
+    grid-template-areas: 
+    "esc esc"
+    "filtros produ"
+    "pie pie";
+}
+
+.conteiner{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+      .conteiner{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
     .navbar {
         padding: 16px;
@@ -190,8 +228,6 @@ button {
         gap: 10px;
         list-style: none;
         padding: 10px;
-
-
     }
 
     .filtros a {
@@ -248,12 +284,144 @@ button {
 
 /* TERMINAN LAS MEDIA */
 
-/* COMIENZAN LAS MEDIA 767*/
+/* COMIENZAN LAS MEDIA 577*/
 
 @media (min-width: 576px) {
 
+    .body{
+    display: grid;
+    grid-template-areas: 
+    "esc esc"
+    "filtros produ"
+    "pie pie";
+}
+
+.conteiner{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+    .navbar {
+        padding: 16px;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        background-color: white;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 0;
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    .nav-links a {
+        width: 100%;
+        padding: 0px 20px;
+        font-size: 16px;
+    }
+
+
+    .menu {
+      overflow: hidden;
+    }
+
+    .conteiner{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .productos img {
+        width: 200px;
+        height: auto;
+    }
+
+    .productos h2 {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    .productos p {
+        font-size: 14px;
+        padding: 0px 10px;
+    }
+
+    .filtros ul {
+        grid-area: filtros;
+        display: flex;
+        flex-direction: row;
+        width: 85px;
+        gap: 10px;
+        list-style: none;
+        padding: 10px;
+
+
+    }
+
+    .filtros a {
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+    .filtros li {
+        padding: 5px 10px;
+        border: 1px solid gainsboro;
+    }
+
+
+    .productos {
+        grid-area: art;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    .articulo {
+        width: 280px;
+        height: auto;
+    }
+
+    .productos img {
+        width: 280px;
+        height: auto;
+        object-fit: cover;
+
+    }
+
+    .productos h2 {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    .productos p {
+        font-size: 12px;
+        padding: 0px 10px;
+    }
+
+    button {
+        background-color: rgb(254, 255, 255);
+        font-size: 14px;
+        margin: 0px 10px 20px 10px;
+        padding: 0px 10px;
+        border: 1px solid gainsboro;
+
+    }
+
+}
+
+/* TERMINAN LAS MEDIA */
+
+/* COMIENZAN LAS MEDIA 577*/
+
+@media (min-width: 767px) {
+
     .conteiner{
         display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .navbar {
